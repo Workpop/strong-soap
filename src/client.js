@@ -21,7 +21,7 @@ class Client extends Base {
     super(wsdl, options);
     options = options || {};
     this.xmlHandler = new XMLHandler(wsdl.definitions.schemas, options);
-    this._initializeServices(endpoint);
+    this.setEndpoint(endpoint);
     this.httpClient = options.httpClient || new HttpClient(options);
   }
 
@@ -100,7 +100,7 @@ class Client extends Base {
     };
   }
 
-  
+
 
   _invoke(operation, args, location, callback, options, extraHeaders) {
     var self = this,
