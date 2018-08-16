@@ -1,6 +1,6 @@
 {
   "name": "@workpop/strong-soap",
-  "version": "1.12.1",
+  "version": "1.13.0",
   "description": "A minimal node SOAP client",
   "engines": {
     "node": ">=6.0"
@@ -15,6 +15,7 @@
     "request": "^2.72.0",
     "sax": "^1.2",
     "selectn": "^1.0.20",
+    "standard-version": "^4.4.0",
     "strong-globalize": "^3.2.0",
     "uuid": "^3.2.1",
     "xml-crypto": "^0.10.1",
