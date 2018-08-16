@@ -189,7 +189,7 @@ class Client extends Base {
     this.addSoapHeadersToEnvelope(soapHeaderElement, this.xmlHandler);
 
     if (self.security && self.security.addSoapHeaders) {
-      xml = self.security.addSoapHeaders(envelope.header);
+      xml = self.security.addSoapHeaders(envelope.header, this, operation);
     }
 
     let schemas = defs.schemas;
